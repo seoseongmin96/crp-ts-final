@@ -26,7 +26,7 @@ const Nav: React.FC = () => {
           </li>
           
           <li className="nav-item">
-            <a className="nav-link" href="/plagiarism/select">표절 & 분석 프로그램</a>
+            <a className="nav-link" href="/plagiarism/select"> 프로그램 </a>
           </li>
         </ul>
         

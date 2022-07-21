@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
 import { NextPage } from 'next';
-import Upload from '@/components/plagiarism/Upload';
+import Lyrics from '@/components/music/Lyrics';
 
-const UploadPage: NextPage = () =>{
+const LyricsPage: NextPage = () =>{
     const onChange =(e: React.FormEvent<HTMLInputElement> ) => {
         e.preventDefault()
          
@@ -12,6 +12,6 @@ const UploadPage: NextPage = () =>{
 
     }
 
-    return <Upload onChange={onChange} onSubmit={onSubmit}/>
+    return <Lyrics onChange={onChange} onSubmit={onSubmit}/>
 }
-export default UploadPage;
+export default LyricsPage;

@@ -7,9 +7,9 @@ const AnalysisSelectPage: NextPage = () =>{
     const onChange = (e: React.FormEvent<HTMLInputElement> ) => {
         e.preventDefault()
 
+    }
     const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault()
-    }
     }
     return <AnalysisSelect onChange={onChange}/>
 }

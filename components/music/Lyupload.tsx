@@ -7,13 +7,14 @@ const fileTypes = ["JPG", "PNG", "GIF"];
 type Props = {
     onChange : (e: React.FormEvent<HTMLInputElement> | any ) => void
 }
-const AnUpload: React.FC<Props> = ({onChange}) => {
+const Lyupload: React.FC<Props> = ({onChange}) => {
     return (
         <div className={style.container}>
-            <form action="/analysis/analysis">
+            <form action="/music/lyrics">
               <FileUploader onChange={onChange} name="file" types={fileTypes} /> <br/>
-              <button type="submit" className={style.button}>분석할 악보 업로드</button>
+              <button type="submit" className={style.button}>작사할 악보 업로드</button>
             </form>
+
             <a href="#" className={style.float}>
               <img src='https://ifh.cc/g/5y48Hl.png' className={style.my} style={{width:40+"px", height:40+"px"}}/>
           </a>
@@ -21,4 +22,4 @@ const AnUpload: React.FC<Props> = ({onChange}) => {
     );
 }
 
-export default AnUpload;
+export default Lyupload;
