@@ -28,6 +28,14 @@ const Nav: React.FC = () => {
           <li className="nav-item">
             <a className="nav-link" href="/plagiarism/select"> 프로그램 </a>
           </li>
+
+          <li className="nav-item">
+            <a className="nav-link" href="/upload/fileupload"> 파일업로드 </a>
+          </li>
+
+          <li className="nav-item">
+            <a className="nav-link" href="/upload/dragdrop"> 드래그업로드 </a>
+          </li>
         </ul>
         
       </div>

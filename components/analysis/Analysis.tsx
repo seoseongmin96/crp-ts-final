@@ -2,6 +2,7 @@ import React from "react";
 import styles from "@/styles/Profile.module.css"
 
 const Analysis : React.FC = () => {
+  
     return (
     <div className="col-md-3 text-center m-auto">
         <div>

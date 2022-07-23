@@ -5,9 +5,9 @@ import style from '@/styles/Float.module.css'
 const Profile: React.FC = () => {
 return(
 <>
-<div className="h2">
+<div className="col-md-3 text-center m-auto"> <br/><br/><br/>
     <h2>개발자 프로필</h2>
-</div> 
+</div> <br/><br/><br/>
 <div className='container h-100'>
 <div className= "row d-flex justify-content-center align-items-center h-100">
 <div className="card" style={{maxWidth: 20+"rem"}}>
