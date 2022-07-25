@@ -1,6 +1,7 @@
 import Style from '@/styles/Video.module.css'
 import css from "styled-jsx/css"
 import {Button, Col, Form, Row} from "react-bootstrap";
+import { useEffect } from 'react';
 
 type Props = {
   onClick: (e: React.FormEvent<HTMLInputElement> | any ) => void
@@ -69,7 +70,14 @@ const Home: React.FC<Props> = ({onClick}) => {
         background-color: rgb(121, 91, 177);
         color: white;
     }
+
+
 `
+     useEffect (() => {
+      localStorage.clear();
+     })
+    
+     
     return(
     <>
     <div id="Fade" className="carousel slide carousel-fade" data-bs-ride="carousel">
@@ -111,7 +119,7 @@ const Home: React.FC<Props> = ({onClick}) => {
       <article className='product1'>
         <p>
         CRP만의 표절 프로그램을 이용해보세요</p>
-        <p><a className="btn btn-secondary" href="/plagiarism/upload">바로가기 &raquo;</a></p>
+        <p><a className="btn btn-secondary" href="/plagiarism/plupload">바로가기 &raquo;</a></p>
       </article>
 
       <img src="search.jpg" height = {630} className="d-block w-100"/> <br/><br/><br/><br/>

@@ -18,7 +18,7 @@ const PlUploadPage: NextPage = () => {
     const file = e.target.files[0]
     console.log(file)
     setImages(file)
-    alert(file.name)
+   // alert(file.name) 해당 파일명
   }
 
   const onSubmitFile = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -26,16 +26,26 @@ const PlUploadPage: NextPage = () => {
     const formData = new FormData()
     formData.append('uploadImage', images[0])
     console.log('>>' + formData)
-    console.log(`업로드 된 파일 : ${(formData)}`)
+    console.log(`업로드 된 표절용 악보 : ${(formData)}`)
     window.location.href = "http://localhost:3000/plagiarism/plagiarism"
     const res = await axios.post(`http://127.0.0.1:8000/rc`, formData, {headers})
   }
   
+  const fixonSubmitFile =  async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+    const fixData = new FormData()
+    fixData.append('uploadImage', images[0])
+    console.log('>>' + fixData)
+    console.log(`업로드 된 원본 악보 : ${(fixData)}`)
+    const res = await axios.post(`http://127.0.0.1:8000/rc`, fixData, {headers})
+
+  }
+
   useEffect(()=> {
   } ,[])
 
   return (
-    <Plupload onChange = {onLoadFile} onSubmit = {onSubmitFile}/>
+    <Plupload onChange = {onLoadFile} onSubmit = {onSubmitFile} onSubmit1={fixonSubmitFile}/>
   )
 }
 export default PlUploadPage

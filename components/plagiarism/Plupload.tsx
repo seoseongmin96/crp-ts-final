@@ -5,15 +5,15 @@ import style from '@/styles/Table.module.css'
 type Props = {
   onChange : (e: React.FormEvent<HTMLInputElement> | any ) => void
   onSubmit : (e: React.FormEvent<HTMLFormElement> ) => void
-  
+  onSubmit1 :(e: React.FormEvent<HTMLFormElement> ) => void
 }
 
-const PlUpload: React.FC<Props> = ({onChange, onSubmit }: Props) => {
+const PlUpload: React.FC<Props> = ({onChange, onSubmit, onSubmit1 }: Props) => {
   
 
   return (
   <div>
-    <form onSubmit={onSubmit}>
+    <form onSubmit={onSubmit1}>
     <div>
       <div className="col-md-3 text-center m-auto">
     <h3 className={style.h3}> <br/>

@@ -18,7 +18,7 @@ const LyUploadPage: NextPage = () => {
     const file = e.target.files[0]
     console.log(file)
     setImages(file)
-    alert(file.name)
+   // alert(file.name) 해당 파일명
   }
 
   const onSubmitFile = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -26,7 +26,7 @@ const LyUploadPage: NextPage = () => {
     const formData = new FormData()
     formData.append('uploadImage', images[0])
     console.log('>>' + formData)
-    console.log(`업로드 된 파일 : ${(formData)}`)
+    console.log(`업로드 된 작사 악보 : ${(formData)}`)
     window.location.href = "http://localhost:3000/music/lyrics"
     const res = await axios.post(`http://127.0.0.1:8000/rc`, formData, {headers})
     
