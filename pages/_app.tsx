@@ -1,7 +1,7 @@
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 import Footer from "@/components/Footer";
-import {wrapper} from '@/modules/store'
+//import {wrapper} from '@/modules/store'
 import Nav  from '@/components/Nav'
 
 function MyApp({ Component, pageProps: {...pageProps} }: AppProps) {
@@ -19,4 +19,4 @@ function MyApp({ Component, pageProps: {...pageProps} }: AppProps) {
   )
 }
 
-export default wrapper.withRedux(MyApp)
+export default MyApp

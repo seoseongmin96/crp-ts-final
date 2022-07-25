@@ -3,7 +3,6 @@ import React, {useState} from 'react';
 import FileUpload from '@/components/upload/FileUpload';
 
 
-
 const FileUploadPage : NextPage = () => {
     const [fileImage, setFileImage] = useState("");
 
@@ -20,4 +19,5 @@ const FileUploadPage : NextPage = () => {
   return <FileUpload onChange={onChange} onSubmit={onSubmit}/>
 
 }
+
 export default FileUploadPage

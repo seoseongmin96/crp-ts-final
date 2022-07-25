@@ -11,7 +11,7 @@ const Select: React.FC = () => {
                 <div className="card-body">
                     <h5 className="card-title">표절 검사를 확인해보세요</h5> <br/> 
                     <p className="card-text"></p>
-                    <a href="/plagiarism/upload" className="btn btn-outline-dark">표절검사</a>
+                    <a href="/plagiarism/plupload" className="btn btn-outline-dark">표절검사</a>
                 </div>
             </div> &nbsp; &nbsp;
 

@@ -12,9 +12,14 @@ const FileUpload: React.FC<Props> = ({onChange, onSubmit}) =>{
   const [fileImage, setFileImage] = useState("");
 
   // 파일 저장
-  const saveFileImage = (e:any) => {
+  const handleChangeFileImage = (e:any) => {
     setFileImage(URL.createObjectURL(e.target.files[0]));
   };
+
+  const handleSaveFileImage = () => {
+    alert(`파일명 : ***jpg`)
+  };
+
 
   // 파일 삭제
   const deleteFileImage = () => {
@@ -45,7 +50,7 @@ const FileUpload: React.FC<Props> = ({onChange, onSubmit}) =>{
                   }}
                 >
                   <input
-                    onChange={saveFileImage}
+                    onChange={handleChangeFileImage}
                     name="imgUpload"
                     type="file"
                     accept="image/*"
@@ -60,7 +65,7 @@ const FileUpload: React.FC<Props> = ({onChange, onSubmit}) =>{
                       height: "40px",
                       cursor: "pointer",
                     }}
-                    onClick={() => deleteFileImage()}
+                    onClick={() => handleSaveFileImage()}
                   >
                     업로드
                   </button>
@@ -72,8 +77,6 @@ const FileUpload: React.FC<Props> = ({onChange, onSubmit}) =>{
                       height: "40px",
                       cursor: "pointer",
                       
-                      
-
                     }}
                     onClick={() => deleteFileImage()}
                   >

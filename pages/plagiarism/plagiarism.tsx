@@ -1,10 +1,10 @@
 import React, {useState} from 'react';
-import Result from '@/components/plagiarism/Result';
+import Result from '@/components/plagiarism/Plagiarism';
 import { NextPage } from 'next';
 
-const ResultPage: NextPage = () =>{
+const PlagiarismPage: NextPage = () =>{
 
-    const [result, setResult] = useState<any>(null);
+    
 
     const onChange = (e: React.FormEvent<HTMLInputElement>) =>{
         e.preventDefault()
@@ -17,4 +17,4 @@ const ResultPage: NextPage = () =>{
 
     return <Result onChange={onChange} onSubmit={onSubmit}/>
 }
-export default ResultPage;
+export default PlagiarismPage;

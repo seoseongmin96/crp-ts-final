@@ -1,3 +1,5 @@
+/*
+
 import { AnyAction, CombinedState, combineReducers,  configureStore } from '@reduxjs/toolkit'
 import { createWrapper } from 'next-redux-wrapper'
 import logger from 'redux-logger'
@@ -50,5 +52,5 @@ export type AppState = ReturnType<typeof rootReducer>;
 export type AppDispatch = typeof store.dispatch;
 export const wrapper = createWrapper(makeStore, {debug: isDev})
 export default store;  
-
+*/
 

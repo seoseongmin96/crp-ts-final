@@ -4,15 +4,13 @@ type Props = {
     onSubmit : (e: React.FormEvent<HTMLFormElement> ) => void
     onChange : (e: React.FormEvent<HTMLInputElement> | any ) => void
 }
-const Result: React.FC<Props> = ({onChange, onSubmit}) => {
+const Plagiarism: React.FC<Props> = ({onChange, onSubmit}) => {
 
-    const onClick = (e: any) => {
-        e.preventDefault();
-        setClick(1)
-    }
+    
 
-    const [click, setClick] = useState(0)
-    return(<div  >
+   
+    return(
+    <div>
     <form onSubmit={onSubmit}>
         <div >
             <img src="https://cdn.imweb.me/upload/S20200724abcb07db26ecf/0837716fc9c26.jpeg" style={{width:500+"px"}}/> &nbsp; &nbsp; &nbsp;
@@ -28,4 +26,4 @@ const Result: React.FC<Props> = ({onChange, onSubmit}) => {
     </div>)
 }
 
-export default Result;
+export default Plagiarism;

@@ -1,14 +1,15 @@
 import React, { useEffect, useState } from 'react'
-import Anupload from '@/components/analysis/Anupload'
+import Plupload from '@/components/plagiarism/Plupload'
 import { NextPage } from 'next'
 import axios from 'axios'
+
 
 const headers = {
   "Content-Type" : "multipart/form-data",
   //Authorization: "JWT fefege...",
 }
 
-const AnUploadPage: NextPage = () => {
+const PlUploadPage: NextPage = () => {
   
   const [images, setImages] = useState('')
 
@@ -26,7 +27,7 @@ const AnUploadPage: NextPage = () => {
     formData.append('uploadImage', images[0])
     console.log('>>' + formData)
     console.log(`업로드 된 파일 : ${(formData)}`)
-    window.location.href = "http://localhost:3000/analysis/analysis"
+    window.location.href = "http://localhost:3000/plagiarism/plagiarism"
     const res = await axios.post(`http://127.0.0.1:8000/rc`, formData, {headers})
   }
   
@@ -34,7 +35,7 @@ const AnUploadPage: NextPage = () => {
   } ,[])
 
   return (
-    <Anupload onChange = {onLoadFile} onSubmit = {onSubmitFile}/>
+    <Plupload onChange = {onLoadFile} onSubmit = {onSubmitFile}/>
   )
 }
-export default AnUploadPage
+export default PlUploadPage
