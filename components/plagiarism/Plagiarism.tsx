@@ -6,7 +6,7 @@ type Props = {
 }
 const Plagiarism: React.FC<Props> = ({onChange, onSubmit}) => {
 
-    
+
 
    
     return(

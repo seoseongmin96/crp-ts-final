@@ -3,8 +3,11 @@ import Anupload from '@/components/analysis/Anupload'
 import { NextPage } from 'next'
 import axios from 'axios'
 
+const SERVER = 'http://localhost:8000'
+
 const headers = {
   "Content-Type" : "multipart/form-data",
+  'Accept': 'application/json'
   //Authorization: "JWT fefege...",
 }
 
@@ -26,8 +29,8 @@ const AnUploadPage: NextPage = () => {
     formData.append('uploadImage', images[0])
     console.log('>>' + formData)
     console.log(`업로드 된 분석 악보 : ${(formData)}`)
-    window.location.href = "http://localhost:3000/analysis/analysis"
-    const res = await axios.post(`http://127.0.0.1:8000/rc`, formData, {headers})
+    //window.location.href = "http://localhost:3000/analysis/analysis"
+    const res = await axios.post(`${SERVER}/files/upload`, formData, {headers})
   }
   
   useEffect(()=> {
@@ -38,3 +41,4 @@ const AnUploadPage: NextPage = () => {
   )
 }
 export default AnUploadPage
+

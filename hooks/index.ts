@@ -1,10 +1,8 @@
 import { TypedUseSelectorHook, useDispatch, useSelector } from 'react-redux'
-//import type { AppState, AppDispatch } from '@/modules/store'
+import { AppState, AppDispatch, useAppSelector } from '@/modules/store'
 import React,{useEffect} from 'react';
 
-
-//export const useAppDispatch : () => AppDispatch = useDispatch
-//export const useAppSelector: TypedUseSelectorHook<AppState> = useSelector;
+export const useAppDispatch : () => AppDispatch = useDispatch
 
 export const useScript = (url: any, onload: any) => {
     useEffect(() => {
@@ -20,4 +18,3 @@ export const useScript = (url: any, onload: any) => {
       };
     }, [url, onload]);
   };
-            
