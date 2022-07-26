@@ -162,4 +162,4 @@ const Home: React.FC<Props> = ({onClick}) => {
 </>)
         
 }
-export default Home 
+export default Home

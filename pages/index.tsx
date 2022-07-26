@@ -1,4 +1,4 @@
-import Home from "@/components/Home";
+import Home from "@/components/common/Home";
 import type { NextPage } from "next";
 /**
  * 

@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import { NextPage } from 'next';
-import Lyrics from '@/components/music/Lyrics';
+import Lyrics from '@/components/lyrics/Lyrics';
 
 const LyricsPage: NextPage = () =>{
     const onChange =(e: React.FormEvent<HTMLInputElement> ) => {

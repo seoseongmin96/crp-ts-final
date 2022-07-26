@@ -8,7 +8,7 @@ const OurSite: React.FC = () => {
     <h3>CRP 사이트를 소개합니다. </h3><br/> <br/></div>
     <div ></div>
         <div>
-        <img src = "https://www.crp-group.com/wp-content/uploads/2017/09/logo-crp.jpg"/> <br/> <br/> <br/>
+        <img src = "https://ifh.cc/g/KtohFH.png"/> <br/> <br/> <br/>
         <p> 저희 회사명은 CRP입니다. CRP에서 C는 Create, R은 Road, P는 Programs 라는 뜻으로 새로운 방향의 프로그램을 창조한다라는 의미를 가지고 있습니다.</p> <br/>
         <p>현재 저희 사이트는 국내 최고의 표절 및 악보 분석 프로그램을 가진 회사로 자리잡고 있습니다.</p> 
            <p>또한 인공지능 기술을 기반으로 만들어진 사이트이기 때문에 사용자가 원하는

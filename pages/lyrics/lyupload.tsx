@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import Lyupload from '@/components/music/Lyupload'
+import Lyupload from '@/components/lyrics/Lyupload'
 import { NextPage } from 'next'
 import axios from 'axios'
 

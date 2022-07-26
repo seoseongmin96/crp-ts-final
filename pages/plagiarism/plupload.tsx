@@ -2,8 +2,6 @@ import React, { useEffect, useState } from 'react'
 import Plupload from '@/components/plagiarism/Plupload'
 import { NextPage } from 'next'
 import axios from 'axios'
-
-
 const headers = {
   "Content-Type" : "multipart/form-data",
   //Authorization: "JWT fefege...",
@@ -38,7 +36,6 @@ const PlUploadPage: NextPage = () => {
     console.log('>>' + fixData)
     console.log(`업로드 된 원본 악보 : ${(fixData)}`)
     const res = await axios.post(`http://127.0.0.1:8000/rc`, fixData, {headers})
-
   }
 
   useEffect(()=> {

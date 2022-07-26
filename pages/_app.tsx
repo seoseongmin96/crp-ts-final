@@ -1,8 +1,8 @@
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
-import Footer from "@/components/Footer";
+import Footer from "@/components/common/Footer";
 //import {wrapper} from '@/modules/store'
-import Nav  from '@/components/Nav'
+import Nav  from '@/components/common/Nav'
 
 function MyApp({ Component, pageProps: {...pageProps} }: AppProps) {
   return ( 

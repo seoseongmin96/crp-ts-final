@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import Result from '@/components/plagiarism/Plagiarism';
+import Plagiarism from '@/components/plagiarism/Plagiarism';
 import { NextPage } from 'next';
 
 const PlagiarismPage: NextPage = () =>{
@@ -15,6 +15,6 @@ const PlagiarismPage: NextPage = () =>{
     }
 
 
-    return <Result onChange={onChange} onSubmit={onSubmit}/>
+    return <Plagiarism onChange={onChange} onSubmit={onSubmit}/>
 }
 export default PlagiarismPage;

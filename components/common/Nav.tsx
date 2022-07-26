@@ -22,11 +22,11 @@ const Nav: React.FC = () => {
           </li>
 
           <li className="nav-item">
-            <a className="nav-link" href="/site/aboutSite">관련 사이트</a>
+            <a className="nav-link" href="/company/aboutSite">관련 사이트</a>
           </li>
           
           <li className="nav-item">
-            <a className="nav-link" href="/program/select"> 프로그램 </a>
+            <a className="nav-link" href="/common/select"> 프로그램 </a>
           </li>
 
         </ul>
