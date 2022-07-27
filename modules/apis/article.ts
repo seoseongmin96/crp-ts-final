@@ -4,7 +4,7 @@ const SERVER = process.env.NEXT_PUBLIC_SERVER
 const headers = {
     "Content-Type" : "application/json",
     Authorization: "JWT fefege...",
-}
+} 
 
 export const writeArticle = async (
     writeData: Article) => {
